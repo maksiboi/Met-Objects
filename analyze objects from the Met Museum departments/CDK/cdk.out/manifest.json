@@ -1,0 +1,481 @@
+{
+  "version": "20.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "damn-stack2": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "damn-stack2.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/damn-stack2": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798.zip",
+              "id": "5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798",
+              "packaging": "file",
+              "sourceHash": "5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798",
+              "s3BucketParameter": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3BucketCE3028B4",
+              "s3KeyParameter": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3VersionKey6E4CA17E",
+              "artifactHashParameter": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798ArtifactHashAA5C1430"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1.zip",
+              "id": "4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1",
+              "packaging": "file",
+              "sourceHash": "4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1",
+              "s3BucketParameter": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3Bucket4D924703",
+              "s3KeyParameter": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3VersionKey4826FBE7",
+              "artifactHashParameter": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1ArtifactHash683A8396"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-buckettask2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damnbuckettask27CC06D97",
+            "trace": [
+              "new Bucket (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:666:26)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-getdepartmentids2/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damngetdepartmentids2ServiceRole9E6DA6B7",
+            "trace": [
+              "new Role (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:63:22)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:97:35)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-getdepartmentids2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damngetdepartmentids24A9F04AF",
+            "trace": [
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:172:26)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/AssetParameters/5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3BucketCE3028B4",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/AssetParameters/5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3VersionKey6E4CA17E",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/AssetParameters/5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798ArtifactHashAA5C1430",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/AssetParameters/4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3Bucket4D924703",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/AssetParameters/4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3VersionKey4826FBE7",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/AssetParameters/4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1ArtifactHash683A8396",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:98:25)",
+              "Stack.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:473:33)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:59",
+              "withoutDeprecationWarnings (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.js:103:20)",
+              "new Asset (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.js:46:44)",
+              "AssetCode.bind (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.js:277:26)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:114:33)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-getobjects2/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damngetobjects2ServiceRoleC2CAD8C3",
+            "trace": [
+              "new Role (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:63:22)",
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:97:35)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-getobjects2/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damngetobjects2ServiceRoleDefaultPolicy60699D39",
+            "trace": [
+              "new Policy (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.js:57:26)",
+              "Role.addToPrincipalPolicy (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:247:34)",
+              "Function.addToPrincipal (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:102:65)",
+              "Function.addToPrincipalOrResource (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:50:30)",
+              "Bucket.grant (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:487:31)",
+              "Bucket.grantReadWrite (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:335:21)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:144",
+              "exports.Kernel._ensureSync (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5871:28)",
+              "exports.Kernel.invoke (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:73)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-getobjects2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damngetobjects28A3E6359",
+            "trace": [
+              "new Function (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:172:26)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-cdk-state-machine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damncdkstatemachineRoleF570DE9A",
+            "trace": [
+              "new Role (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:63:22)",
+              "new StateMachine (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-stepfunctions\\lib\\state-machine.js:273:35)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-cdk-state-machine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damncdkstatemachineRoleDefaultPolicy8B2EB8BB",
+            "trace": [
+              "new Policy (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.js:57:26)",
+              "Role.addToPrincipalPolicy (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:247:34)",
+              "StateMachine.addToRolePolicy (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-stepfunctions\\lib\\state-machine.js:309:19)",
+              "new StateMachine (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-stepfunctions\\lib\\state-machine.js:289:18)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/damn-cdk-state-machine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "damncdkstatemachineD7D50353",
+            "trace": [
+              "new StateMachine (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-stepfunctions\\lib\\state-machine.js:279:26)",
+              "exports.Kernel._create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5592:179)",
+              "exports.Kernel.create (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5400:29)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stage.js:104:41)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:144",
+              "exports.Kernel._ensureSync (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5871:28)",
+              "exports.Kernel.invoke (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:73)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stage.js:104:41)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:144",
+              "exports.Kernel._ensureSync (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5871:28)",
+              "exports.Kernel.invoke (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:73)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/damn-stack2/Service-principalMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceprincipalMap",
+            "trace": [
+              "Object.deployTimeLookup (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\region-lookup.js:35:19)",
+              "Stack.regionalFact (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stack.js:638:32)",
+              "ServicePrincipalToken.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\aws-iam\\lib\\principals.js:850:22)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\resolvable.js:64:30)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:198:22)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:131:55)",
+              "Object.resolve [as mapToken] (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "TokenizedStringFragments.mapTokens (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\string-fragments.js:78:43)",
+              "RememberingTokenResolver.resolveString (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\resolvable.js:93:26)",
+              "RememberingTokenResolver.resolveString (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:201:27)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:98:54)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:146:51)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:146:51)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:122:51",
+              "Array.map (<anonymous>)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:122:14)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:146:51)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\resolvable.js:66:32)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:198:22)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:131:55)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:146:51)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\resolvable.js:66:32)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:198:22)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:131:55)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:146:51)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\resolvable.js:66:32)",
+              "RememberingTokenResolver.resolveToken (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:198:22)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:131:55)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:146:51)",
+              "Object.resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:58:48)",
+              "resolve (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:146:51)",
+              "Object.findTokens (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\resolve.js:184:5)",
+              "findAllReferences (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.js:97:38)",
+              "Object.resolveReferences (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.js:20:19)",
+              "Object.prepareApp (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.js:30:12)",
+              "Object.synthesize (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:21:19)",
+              "App.synth (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\jsii-kernel-yAp9YX\\node_modules\\@aws-cdk\\core\\lib\\stage.js:104:41)",
+              "C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:144",
+              "exports.Kernel._ensureSync (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5871:28)",
+              "exports.Kernel.invoke (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:5453:73)",
+              "exports.KernelHost.processRequest (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6618:36)",
+              "exports.KernelHost.run (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6592:48)",
+              "Immediate._onImmediate (C:\\Users\\IOLAP_~1\\AppData\\Local\\Temp\\tmpyt6ga29w\\lib\\program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "damn-stack2"
+    }
+  }
+}

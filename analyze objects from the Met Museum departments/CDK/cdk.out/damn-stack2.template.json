@@ -1,0 +1,731 @@
+{
+ "Resources": {
+  "damnbuckettask27CC06D97": {
+   "Type": "AWS::S3::Bucket",
+   "Properties": {
+    "BucketName": "damn-buckettask2"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-buckettask2/Resource"
+   }
+  },
+  "damngetdepartmentids2ServiceRole9E6DA6B7": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "lambda.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "ManagedPolicyArns": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        "arn:",
+        {
+         "Ref": "AWS::Partition"
+        },
+        ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+       ]
+      ]
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-getdepartmentids2/ServiceRole/Resource"
+   }
+  },
+  "damngetdepartmentids24A9F04AF": {
+   "Type": "AWS::Lambda::Function",
+   "Properties": {
+    "Code": {
+     "S3Bucket": {
+      "Ref": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3BucketCE3028B4"
+     },
+     "S3Key": {
+      "Fn::Join": [
+       "",
+       [
+        {
+         "Fn::Select": [
+          0,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3VersionKey6E4CA17E"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Fn::Select": [
+          1,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3VersionKey6E4CA17E"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      ]
+     }
+    },
+    "Role": {
+     "Fn::GetAtt": [
+      "damngetdepartmentids2ServiceRole9E6DA6B7",
+      "Arn"
+     ]
+    },
+    "Handler": "damn-getdepartmentids2.lambda_handler",
+    "MemorySize": 512,
+    "Runtime": "python3.9",
+    "Timeout": 300
+   },
+   "DependsOn": [
+    "damngetdepartmentids2ServiceRole9E6DA6B7"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-getdepartmentids2/Resource",
+    "aws:asset:path": "asset.5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798.zip",
+    "aws:asset:is-bundled": false,
+    "aws:asset:property": "Code"
+   }
+  },
+  "damngetobjects2ServiceRoleC2CAD8C3": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "lambda.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "ManagedPolicyArns": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        "arn:",
+        {
+         "Ref": "AWS::Partition"
+        },
+        ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+       ]
+      ]
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-getobjects2/ServiceRole/Resource"
+   }
+  },
+  "damngetobjects2ServiceRoleDefaultPolicy60699D39": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": [
+        "s3:GetObject*",
+        "s3:GetBucket*",
+        "s3:List*",
+        "s3:DeleteObject*",
+        "s3:PutObject*",
+        "s3:Abort*"
+       ],
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Fn::GetAtt": [
+          "damnbuckettask27CC06D97",
+          "Arn"
+         ]
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Fn::GetAtt": [
+             "damnbuckettask27CC06D97",
+             "Arn"
+            ]
+           },
+           "/*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "damngetobjects2ServiceRoleDefaultPolicy60699D39",
+    "Roles": [
+     {
+      "Ref": "damngetobjects2ServiceRoleC2CAD8C3"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-getobjects2/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "damngetobjects28A3E6359": {
+   "Type": "AWS::Lambda::Function",
+   "Properties": {
+    "Code": {
+     "S3Bucket": {
+      "Ref": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3Bucket4D924703"
+     },
+     "S3Key": {
+      "Fn::Join": [
+       "",
+       [
+        {
+         "Fn::Select": [
+          0,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3VersionKey4826FBE7"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Fn::Select": [
+          1,
+          {
+           "Fn::Split": [
+            "||",
+            {
+             "Ref": "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3VersionKey4826FBE7"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      ]
+     }
+    },
+    "Role": {
+     "Fn::GetAtt": [
+      "damngetobjects2ServiceRoleC2CAD8C3",
+      "Arn"
+     ]
+    },
+    "Handler": "damn-getobjects2.lambda_handler",
+    "MemorySize": 512,
+    "Runtime": "python3.9",
+    "Timeout": 600
+   },
+   "DependsOn": [
+    "damngetobjects2ServiceRoleDefaultPolicy60699D39",
+    "damngetobjects2ServiceRoleC2CAD8C3"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-getobjects2/Resource",
+    "aws:asset:path": "asset.4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1.zip",
+    "aws:asset:is-bundled": false,
+    "aws:asset:property": "Code"
+   }
+  },
+  "damncdkstatemachineRoleF570DE9A": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": {
+         "Fn::FindInMap": [
+          "ServiceprincipalMap",
+          {
+           "Ref": "AWS::Region"
+          },
+          "states"
+         ]
+        }
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-cdk-state-machine/Role/Resource"
+   }
+  },
+  "damncdkstatemachineRoleDefaultPolicy8B2EB8BB": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": "lambda:InvokeFunction",
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Fn::GetAtt": [
+          "damngetdepartmentids24A9F04AF",
+          "Arn"
+         ]
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Fn::GetAtt": [
+             "damngetdepartmentids24A9F04AF",
+             "Arn"
+            ]
+           },
+           ":*"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "Action": "lambda:InvokeFunction",
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Fn::GetAtt": [
+          "damngetobjects28A3E6359",
+          "Arn"
+         ]
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Fn::GetAtt": [
+             "damngetobjects28A3E6359",
+             "Arn"
+            ]
+           },
+           ":*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "damncdkstatemachineRoleDefaultPolicy8B2EB8BB",
+    "Roles": [
+     {
+      "Ref": "damncdkstatemachineRoleF570DE9A"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-cdk-state-machine/Role/DefaultPolicy/Resource"
+   }
+  },
+  "damncdkstatemachineD7D50353": {
+   "Type": "AWS::StepFunctions::StateMachine",
+   "Properties": {
+    "RoleArn": {
+     "Fn::GetAtt": [
+      "damncdkstatemachineRoleF570DE9A",
+      "Arn"
+     ]
+    },
+    "DefinitionString": {
+     "Fn::Join": [
+      "",
+      [
+       "{\"StartAt\":\"GetDepartmentIds\",\"States\":{\"GetDepartmentIds\":{\"Next\":\"Map\",\"Retry\":[{\"ErrorEquals\":[\"Lambda.ServiceException\",\"Lambda.AWSLambdaException\",\"Lambda.SdkClientException\"],\"IntervalSeconds\":2,\"MaxAttempts\":6,\"BackoffRate\":2}],\"Type\":\"Task\",\"OutputPath\":\"$.Payload\",\"Resource\":\"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":states:::lambda:invoke\",\"Parameters\":{\"FunctionName\":\"",
+       {
+        "Fn::GetAtt": [
+         "damngetdepartmentids24A9F04AF",
+         "Arn"
+        ]
+       },
+       "\",\"Payload.$\":\"$\"}},\"Map\":{\"Type\":\"Map\",\"End\":true,\"Iterator\":{\"StartAt\":\"GetObjects\",\"States\":{\"GetObjects\":{\"End\":true,\"Retry\":[{\"ErrorEquals\":[\"Lambda.ServiceException\",\"Lambda.AWSLambdaException\",\"Lambda.SdkClientException\"],\"IntervalSeconds\":2,\"MaxAttempts\":6,\"BackoffRate\":2}],\"Type\":\"Task\",\"OutputPath\":\"$.Payload\",\"Resource\":\"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":states:::lambda:invoke\",\"Parameters\":{\"FunctionName\":\"",
+       {
+        "Fn::GetAtt": [
+         "damngetobjects28A3E6359",
+         "Arn"
+        ]
+       },
+       "\",\"Payload.$\":\"$\"}}}},\"ItemsPath\":\"$.departmentIds\"}},\"TimeoutSeconds\":300}"
+      ]
+     ]
+    }
+   },
+   "DependsOn": [
+    "damncdkstatemachineRoleDefaultPolicy8B2EB8BB",
+    "damncdkstatemachineRoleF570DE9A"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/damn-cdk-state-machine/Resource"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WPwWrDMBBEvyV3eVNjaOitTaBQaMC4X7CVN4kiWzLadUoQ+vfKSgLtad7AamZUQ72p4Wn1ij9c6d6uo/aBIH4JaqvemEkyHo07qp13LGHWonYH12LAkYTCYjpiPwdNC+er3ojxbjF7nKb8NKklPXIDcTtrSyXhTjfZIlNSA47fPUJ8n51+RDw4KYMjxM4PpaZo6wejr2VOoaS4qXDZzFCmKxaaDvcErgTZMnyWlg938Zb+H0DMg1X+r9Ae9cm4UvXXp5RUe5WTd+sGXuB5dWZjqjA7MSNBd9Nf5Am5plQBAAA="
+   },
+   "Metadata": {
+    "aws:cdk:path": "damn-stack2/CDKMetadata/Default"
+   },
+   "Condition": "CDKMetadataAvailable"
+  }
+ },
+ "Parameters": {
+  "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3BucketCE3028B4": {
+   "Type": "String",
+   "Description": "S3 bucket for asset \"5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798\""
+  },
+  "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798S3VersionKey6E4CA17E": {
+   "Type": "String",
+   "Description": "S3 key for asset version \"5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798\""
+  },
+  "AssetParameters5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798ArtifactHashAA5C1430": {
+   "Type": "String",
+   "Description": "Artifact hash for asset \"5962333b6c51aa9960d51829882afc5ebc610e62863447e6304cbfb94739e798\""
+  },
+  "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3Bucket4D924703": {
+   "Type": "String",
+   "Description": "S3 bucket for asset \"4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1\""
+  },
+  "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1S3VersionKey4826FBE7": {
+   "Type": "String",
+   "Description": "S3 key for asset version \"4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1\""
+  },
+  "AssetParameters4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1ArtifactHash683A8396": {
+   "Type": "String",
+   "Description": "Artifact hash for asset \"4f03b710b0f1eb5fe491bd94ec3a47c36e914dd39ad41c0d7c821a1212dd21f1\""
+  }
+ },
+ "Conditions": {
+  "CDKMetadataAvailable": {
+   "Fn::Or": [
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "af-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-northwest-1"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "sa-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-2"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-west-2"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "Mappings": {
+  "ServiceprincipalMap": {
+   "af-south-1": {
+    "states": "states.af-south-1.amazonaws.com"
+   },
+   "ap-east-1": {
+    "states": "states.ap-east-1.amazonaws.com"
+   },
+   "ap-northeast-1": {
+    "states": "states.ap-northeast-1.amazonaws.com"
+   },
+   "ap-northeast-2": {
+    "states": "states.ap-northeast-2.amazonaws.com"
+   },
+   "ap-northeast-3": {
+    "states": "states.ap-northeast-3.amazonaws.com"
+   },
+   "ap-south-1": {
+    "states": "states.ap-south-1.amazonaws.com"
+   },
+   "ap-southeast-1": {
+    "states": "states.ap-southeast-1.amazonaws.com"
+   },
+   "ap-southeast-2": {
+    "states": "states.ap-southeast-2.amazonaws.com"
+   },
+   "ap-southeast-3": {
+    "states": "states.ap-southeast-3.amazonaws.com"
+   },
+   "ca-central-1": {
+    "states": "states.ca-central-1.amazonaws.com"
+   },
+   "cn-north-1": {
+    "states": "states.cn-north-1.amazonaws.com"
+   },
+   "cn-northwest-1": {
+    "states": "states.cn-northwest-1.amazonaws.com"
+   },
+   "eu-central-1": {
+    "states": "states.eu-central-1.amazonaws.com"
+   },
+   "eu-north-1": {
+    "states": "states.eu-north-1.amazonaws.com"
+   },
+   "eu-south-1": {
+    "states": "states.eu-south-1.amazonaws.com"
+   },
+   "eu-south-2": {
+    "states": "states.eu-south-2.amazonaws.com"
+   },
+   "eu-west-1": {
+    "states": "states.eu-west-1.amazonaws.com"
+   },
+   "eu-west-2": {
+    "states": "states.eu-west-2.amazonaws.com"
+   },
+   "eu-west-3": {
+    "states": "states.eu-west-3.amazonaws.com"
+   },
+   "me-south-1": {
+    "states": "states.me-south-1.amazonaws.com"
+   },
+   "sa-east-1": {
+    "states": "states.sa-east-1.amazonaws.com"
+   },
+   "us-east-1": {
+    "states": "states.us-east-1.amazonaws.com"
+   },
+   "us-east-2": {
+    "states": "states.us-east-2.amazonaws.com"
+   },
+   "us-gov-east-1": {
+    "states": "states.us-gov-east-1.amazonaws.com"
+   },
+   "us-gov-west-1": {
+    "states": "states.us-gov-west-1.amazonaws.com"
+   },
+   "us-iso-east-1": {
+    "states": "states.amazonaws.com"
+   },
+   "us-iso-west-1": {
+    "states": "states.amazonaws.com"
+   },
+   "us-isob-east-1": {
+    "states": "states.amazonaws.com"
+   },
+   "us-west-1": {
+    "states": "states.us-west-1.amazonaws.com"
+   },
+   "us-west-2": {
+    "states": "states.us-west-2.amazonaws.com"
+   }
+  }
+ }
+}

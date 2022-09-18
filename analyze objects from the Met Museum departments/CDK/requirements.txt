@@ -1,0 +1,6 @@
+aws_cdk.aws_s3
+aws_cdk.aws_lambda
+aws_cdk.aws_lambda_python
+aws_cdk.aws_events_targets
+aws_cdk.aws_events
+aws_cdk.aws_dynamodb
